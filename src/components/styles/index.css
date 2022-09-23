@@ -1,0 +1,6 @@
+/* Estos son los estilos que se implementan en TODOS los codigos del react
+" estilos generales" */
+/* Font family, background color del body, tamaño de imagen,etc */
+body{
+  font-family:'Courier New', Courier, monospace;
+}

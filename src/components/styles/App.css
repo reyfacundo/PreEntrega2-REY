@@ -1,0 +1,13 @@
+/* Aca van los estilos para cosas que se generan en APP.JSX */
+
+.fa-solid{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+}
+
+.cardBody{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+}
