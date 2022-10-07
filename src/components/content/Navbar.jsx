@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Form from '../layouts/Form.jsx';
 import Dropdown from '../layouts/Dropdown.jsx';
 import Secciones from '../layouts/Secciones.jsx';
-import CartWidget from '../layouts/CartWidget.jsx';
 
 const Navbar = () => {
     return (
@@ -13,10 +13,11 @@ const Navbar = () => {
                         <ul className="navbar-nav me-auto">
                             <Secciones/>
                             <Dropdown/>
-                            <CartWidget/>
                         </ul>
-                        <Form/>
                     </div>
+                    <ul>
+                    <Link className="nav-link" to={"/Carrito"}><i className="cartIcon fa-solid fa-cart-flatbed fa-xl"></i></Link>
+                    </ul>
                 </div>
             </nav>
         </>

@@ -3,4 +3,6 @@
 /* Font family, background color del body, tamaño de imagen,etc */
 body{
   font-family:'Courier New', Courier, monospace;
+  overflow-x: hidden;
 }
+
