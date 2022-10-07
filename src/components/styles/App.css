@@ -1,5 +1,13 @@
 /* Aca van los estilos para cosas que se generan en APP.JSX */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body{
+    height: 100vh;
+}
 .fa-solid{
     padding-top: 20px;
     padding-left: 20px;
@@ -27,4 +35,27 @@
 }
 .cartIcon{
     margin-right: 20px;
+}
+.cardDetail{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+.cardChild{
+    display: flex;
+    align-self: center;
+}
+.btnBuy{
+    position: absolute;
+    margin-top: 30px;
+    height: 50px;
+    display: flex;
+}
+.cardImg{
+    width: 350px;
+}
+.buyButton{
+    display: flex;
+    justify-content: center;
 }

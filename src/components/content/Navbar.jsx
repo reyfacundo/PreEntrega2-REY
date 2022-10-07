@@ -12,7 +12,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarColor01">
                         <ul className="navbar-nav me-auto">
                             <Secciones/>
-                            <Dropdown/>
+                            {/* <Dropdown/> */}
                         </ul>
                     </div>
                     <ul>
