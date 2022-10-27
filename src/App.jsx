@@ -10,6 +10,7 @@ import Contacto from './components/content/Contacto';
 import Carrito from './components/content/Carrito';
 import About from './components/content/About';
 import Footer from './components/content/Footer';
+import Categoria from './components/content/Categoria';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             <Routes>
                 <Route element={<ItemListContainer/>} path="/"/>
                 <Route element={<Producto/>} path="/producto/:id"/>
+                <Route element={<Categoria/>} path="/categoria/:id"/>
                 <Route element={<About/>} path="/about"/>
                 <Route element={<Contacto/>} path="/contacto"/>
                 <Route element={<Carrito/>} path="/carrito"/>

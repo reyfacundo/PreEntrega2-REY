@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const DetalleProducto = ({producto}) => {
     return (
         <>
         <div className='cardDetail'>
             <div className="cardChild card mb-3" style={{maxWidth: '900px'}}>
+                <Link to={"/"}><button className="return"><i className="return-icon fa-solid fa-chevron-left"></i></button></Link>
                 <div className="row g-0">
                     <div className="cardImg col-md-4">
                         <img src={`../img/${producto.img}`} className="detailImg img-fluid rounded-start" alt="..." />
@@ -15,7 +17,7 @@ const DetalleProducto = ({producto}) => {
                         <p className="card-text">Precio: <b>{producto.precio} USD</b></p>
                         <p className="card-text">Stock disponible:{producto.cantidad}</p>
                         <div className="buyButton">
-                        <button className="btnBuy btn btn-primary">Comprar</button>
+                        <button className="btnBuy btn btn-primary">Añadir a Carrito</button>
                         </div>
                         </div>
                     </div>

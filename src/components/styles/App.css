@@ -8,11 +8,6 @@
 body{
     height: 100vh;
 }
-.fa-solid{
-    padding-top: 20px;
-    padding-left: 20px;
-    color: white;
-}
 .row{
     display: flex;
     justify-content:center;
@@ -35,6 +30,9 @@ body{
 }
 .cartIcon{
     margin-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
 }
 .cardDetail{
     display: flex;
@@ -51,6 +49,17 @@ body{
     margin-top: 30px;
     height: 50px;
     display: flex;
+}
+.return{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+}
+.return-icon{
+    color: rgb(228, 88, 83);
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 .cardImg{
     width: 350px;

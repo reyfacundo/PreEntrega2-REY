@@ -1,14 +1,17 @@
-import React, {useState, useEffect} from 'react';
-import { BDD } from '../utils/functions';
-import { Link } from 'react-router-dom';
+import { useState,useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { BDD } from "../utils/functions";
+import { Link } from "react-router-dom";
+const Categoria = () => {
 
-const ItemListContainer = () => {
     const [stock, setStock] = useState([]);
+    const {id} = useParams()
     useEffect(() => {
-        BDD().then(stock => {
-            const cards = stock.map(stock=>
+        BDD('/json/stock.json').then( stock => {
+            const Categorias = stock.filter ( stock => stock.idCategoria == id)
+            const cards = Categorias.map(stock =>
                 <div className="card cardProducto" key={stock.id}>
-                    <img className="card-img-top" src={"./img/" + stock.img} alt={stock.nombre} />
+                    <img className="card-img-top" src={"../img/" + stock.img} alt={stock.nombre} />
                     <div className="card-body">
                         <h5 className="card-title">{stock.nombre}</h5>
                         <p className="card-text">Precio: <b>${stock.precio} USD</b></p>
@@ -22,13 +25,11 @@ const ItemListContainer = () => {
             setStock(cards)
         })
     }, []);
-
-
     return (
-        <div className="row">
+        <>
             {stock}
-        </div>
+        </>
     );
 }
 
-export default ItemListContainer;
+export default Categoria;
