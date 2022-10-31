@@ -19,6 +19,7 @@ const ItemListContainer = () => {
                         <div className='btncard'>
                             <button className="btn-details btn btn-primary"><Link className='nav-link' to={"/producto/" + producto[0]}>Ver Detalles</Link></button>
                         </div>
+                        <p>hola</p>
                     </div>
                 </div>)
             setStock(cards)
