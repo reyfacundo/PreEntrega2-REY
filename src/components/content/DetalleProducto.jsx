@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ItemCount from './itemCount';
 
 const DetalleProducto = ({producto}) => {
     return (
@@ -9,15 +10,15 @@ const DetalleProducto = ({producto}) => {
                 <Link to={"/"}><button className="return"><i className="return-icon fa-solid fa-chevron-left"></i></button></Link>
                 <div className="row g-0">
                     <div className="cardImg col-md-4">
-                        <img src={`../img/${producto.img}`} className="detailImg img-fluid rounded-start" alt="..." />
+                        <img src={producto[1].img} className="detailImg img-fluid rounded-start" alt={producto.nombre} />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                        <h5 className="card-title">{producto.nombre}</h5>
-                        <p className="card-text">Precio: <b>{producto.precio} USD</b></p>
-                        <p className="card-text">Stock disponible:{producto.cantidad}</p>
+                        <h5 className="card-title">{producto[1].nombre}</h5>
+                        <p className="card-text">Precio: <b>{producto[1].precio} USD</b></p>
+                        <p className="card-text">Stock disponible:{producto[1].stock}</p>
                         <div className="buyButton">
-                        <button className="btnBuy btn btn-primary">Añadir a Carrito</button>
+                        <ItemCount producto={producto}/>
                         </div>
                         </div>
                     </div>
@@ -29,3 +30,4 @@ const DetalleProducto = ({producto}) => {
 }
 
 export default DetalleProducto;
+

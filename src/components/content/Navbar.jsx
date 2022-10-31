@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Form from '../layouts/Form.jsx';
 import Dropdown from '../layouts/Dropdown.jsx';
 import Secciones from '../layouts/Secciones.jsx';
 
 const Navbar = () => {
+    const categorias = ["Keyboards", "Cases", "Mouse Pads"]
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav className="navbar-color navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <div className="collapse navbar-collapse" id="navbarColor01">
                         <ul className="navbar-nav me-auto">
                             <Secciones/>
-                            {/* <Dropdown/> */}
+                            <Dropdown categoria={categorias}/>
                         </ul>
                     </div>
                     <ul>

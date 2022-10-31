@@ -7,7 +7,7 @@ const Categoria = () => {
     const [stock, setStock] = useState([]);
     const {id} = useParams()
     useEffect(() => {
-        BDD('/json/stock.json').then( stock => {
+        BDD().then( stock => {
             const Categorias = stock.filter ( stock => stock.idCategoria == id)
             const cards = Categorias.map(stock =>
                 <div className="card cardProducto" key={stock.id}>
@@ -17,18 +17,18 @@ const Categoria = () => {
                         <p className="card-text">Precio: <b>${stock.precio} USD</b></p>
                         <p className="card-text">Stock disponible: {stock.cantidad}</p>
                         <div className='btncard'>
-                            <button className="btn btn-primary"><Link className='nav-link' to={"/producto/" + stock.id}>Ver Detalles</Link></button>
+                            <button className="btn-details btn btn-primary"><Link className='nav-link' to={"/producto/" + stock.id}>Ver Detalles</Link></button>
                         </div>
                     </div>
                 </div>)
 
             setStock(cards)
         })
-    }, []);
+    }, [id]);
     return (
-        <>
+        <div className="row">
             {stock}
-        </>
+        </div>
     );
 }
 
