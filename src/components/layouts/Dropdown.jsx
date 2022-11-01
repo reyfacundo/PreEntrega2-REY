@@ -12,7 +12,7 @@ const Dropdown = ({categoria}) => {
     }, []);
     return (
         <>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown navitem">
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
             <div className="dropdown-menu">
                 {dropdown}

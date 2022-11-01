@@ -1,5 +1,6 @@
 import React,{useContext, useEffect, useState} from 'react';
 import { CarritoContext } from '../../context/CarritoContext';
+import { Link } from 'react-router-dom';
 
 const Carrito = () => {
     const {cart, agregarProducto, removerProducto} = useContext(CarritoContext)
@@ -22,8 +23,7 @@ const Carrito = () => {
     }, [cart]);
 
     const app = (cart.length != 0) ? <div className='row'>
-    {localCart}</div> : <><h1>No existen elementos en el carrito</h1>
-    <button className='btn-details btn btn-primary'>VOLVER HOME</button></>;
+    {localCart}</div> : <><div className="empty"><div className="emptySize"><Link to={"/"}><button className='btn-details btn btn-primary btnHome'>HOME</button></Link><h1>Your Cart is empty</h1></div></div></>;
     return app
 }
 

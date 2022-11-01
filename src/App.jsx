@@ -11,13 +11,13 @@ import Carrito from './components/content/Carrito';
 import About from './components/content/About';
 import Footer from './components/content/Footer';
 import Categoria from './components/content/Categoria';
-import { DarkModeProvider} from './context/DarkModeProvider';
+// import { DarkModeProvider} from './context/DarkModeProvider';
 
 
 const App = () => {
     return (
         <>
-        <DarkModeProvider>
+        {/* <DarkModeProvider> */}
         <BrowserRouter>
             <Navbar/>
             <Routes>
@@ -31,7 +31,7 @@ const App = () => {
             </Routes>
             <Footer/>
         </BrowserRouter>
-        </DarkModeProvider>
+        {/* </DarkModeProvider> */}
             {
             //<Pruebo/>
             }

@@ -11,20 +11,22 @@ const Contacto = () => {
     }
     return (
         <>
-        <div className="container">
+        <div className="container contForm">
         <form onSubmit={form} ref={formData}>
-            <div className="mb-3">
+            <div className="mb-3 textForm">
                 <label htmlFor="email" className='form-label'>Email</label>
-                <input type="email" className="form-control" name="email" placeholder="Enter email" required/>
+                <input type="email" className="form-control formShadow" name="email" placeholder="Enter email" required/>
             </div>
-            <div className="mb-3">
+            <div className="mb-3 textForm">
                 <label htmlFor="name" className='form-label'>Name</label>
-                <input type="text" className="form-control" name="name" placeholder="Enter your name"required />
+                <input type="text" className="form-control formShadow" name="name" placeholder="Enter your name"required />
             </div>
-            <div className="mb-3">
-                <textarea name="consulta" rows={10} cols={50} placeholder="How can we help you?" required/>
+            <div className="mb-3 textForm">
+                <textarea className="textArea formShadow" name="consulta" rows={10} cols={50} placeholder="How can we help you?" required/>
             </div>
+            <div className="sendForm">
             <button type="submit" className="btn btn-primary">Send</button>
+            </div>
             </form>
         </div>
         </>

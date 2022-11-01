@@ -19,10 +19,10 @@ const ItemCount = ({producto}) => {
     }
     return (
         <>
-            <button className="btn-details btnBuy btn btn-primary" onClick={()=> agregarProducto(producto, cantidad)}>Añadir a Carrito</button>
-            <button className="btn-details btn btn-primary" onClick={()=> cantProducto("-")}>-</button>
-            <p className="card-text">{cantidad}</p>
-            <button className="btn-details btn btn-primary" onClick={()=> cantProducto("+")}>+</button>
+            <button className="btn-details btnBuy btn btn-primary addCart " onClick={()=> agregarProducto(producto, cantidad)}>Add to Cart</button>
+            <button className="btn-details btn btn-primary quant minus" onClick={()=> cantProducto("-")}>-</button>
+            <p className="card-text quant">{cantidad}</p>
+            <button className="btn-details btn btn-primary quant plus" onClick={()=> cantProducto("+")}>+</button>
         </>
     );
 }

@@ -11,7 +11,7 @@ const Categoria = () => {
             const Categorias = stock.filter ( stock => stock.idCategoria == id)
             const cards = Categorias.map(stock =>
                 <div className="card cardProducto" key={stock.id}>
-                    <img className="card-img-top" src={"../img/" + stock.img} alt={stock.nombre} />
+                    <img className="card-img-top" src={stock.img} alt={stock.nombre} />
                     <div className="card-body">
                         <h5 className="card-title">{stock.nombre}</h5>
                         <p className="card-text">Precio: <b>${stock.precio} USD</b></p>
