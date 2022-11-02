@@ -5,7 +5,7 @@ Tienda de productos electrónicos y periféricos.
 ***
 *Instalación* | 
 ------------ | 
-Clonar repositorio | 
+Clonar repositorio ( git clone https://github.com/reyfacundo/REACT-REY/edit/main/README.md )| 
 Npm install | 
 Npm start | 
 ***
