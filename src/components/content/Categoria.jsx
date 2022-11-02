@@ -14,10 +14,10 @@ const Categoria = () => {
                     <img className="card-img-top" src={stock.img} alt={stock.nombre} />
                     <div className="card-body">
                         <h5 className="card-title">{stock.nombre}</h5>
-                        <p className="card-text">Precio: <b>${stock.precio} USD</b></p>
+                        <p className="card-text"><h2>${stock.precio} </h2></p>
                         <p className="card-text">Stock disponible: {stock.cantidad}</p>
                         <div className='btncard'>
-                            <button className="btn-details btn btn-primary"><Link className='nav-link' to={"/producto/" + stock.id}>Ver Detalles</Link></button>
+                            <button className="btn-details btn btn-primary cardCategoria"><Link className='nav-link' to={"/producto/" + stock.id}>Ver Detalles</Link></button>
                         </div>
                     </div>
                 </div>)

@@ -73,7 +73,7 @@ body{
 .card{
     box-shadow: -9px 9px 2px rgb(236, 126, 75);
     background-color: rgb(248, 240, 225);
-    padding-top: 20px;
+    padding-top: 2px;
     border: none;
     margin: 15px;
 }
@@ -98,10 +98,10 @@ body{
 }
 .price{
     font-size: 1.6rem;
-    color: rgb(241, 133, 71);
+    color: rgb(129, 173, 255);
 }
 .homeDetails{
-    box-shadow: -5px 5px 2px rgb(255, 206, 99);
+    box-shadow: -5px 5px 2px rgb(134, 176, 255);
 }
 
 .logo:hover , .cartIcon:hover{
@@ -136,10 +136,10 @@ body{
     background-color: rgb(194, 68, 68);
 }
 .detailBody{
-    box-shadow: 15px 15px rgb(243, 174, 122);
+    box-shadow: 15px 15px rgb(146, 181, 255);
 }
 .footer{
-    background-color: rgba(252, 111, 55, 0.664);
+    background-color: rgba(124, 181, 255, 0.788);
 }
 .socials{
     color: beige;
@@ -171,7 +171,7 @@ body{
     border-radius: 10px;
 }
 .formShadow{
-    box-shadow: 10px 10px 2px orange;
+    box-shadow: 10px 10px 2px rgb(120, 178, 255);
     background-color: beige;
 }
 .sendForm{
@@ -202,4 +202,219 @@ body{
     justify-content: center;
     position: absolute;
     margin: 10px;
+}
+.total{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding-top: 20px;
+}
+.btnDelete{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+h3 {
+    font-size: 16px;
+}
+.text-navy {
+    color: #1f1b1b;
+}
+.cart-product-imitation {
+  text-align: center;
+  height: 10px;
+  width: 80px;
+}
+
+.product-imitation.xl {
+  padding: 120px 0;
+}
+table.shoping-cart-table {
+  margin-bottom: 3;
+}
+table.shoping-cart-table tr td {
+  border: none;
+  text-align: right;
+}
+table.shoping-cart-table tr td.desc,
+table.shoping-cart-table tr td:first-child {
+  text-align: left;
+}
+table.shoping-cart-table tr td:last-child {
+  width: 80px;
+}
+
+.ibox-content {
+  background-color: rgb(252, 252, 230);
+  padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+  border-radius: 10px;
+}
+.ibox{
+    box-shadow: -9px 9px 1.3px rgb(129, 162, 255);
+    border-radius: 10px;
+}
+.totalContent{
+    text-align: center;
+}
+.checkoutCard{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .wrapperCheckout{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 10px 10px 1px rgb(114, 171, 255);
+    padding: 30px 0;
+    border: 1.9px rgb(39, 38, 38) solid;
+  }
+  
+  .wrapperCheckout .title{
+    background: rgb(114, 171, 255);
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 5px;
+    height: 35px;
+    line-height: 38px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .checkout_form{
+    padding: 0 30px;
+  }
+  
+  .checkout_form .input_item input[type="text"]{
+    width: 100%;
+    border: 0;
+    background: transparent;
+    text-align: center;
+    border-bottom: 2px solid #dddddd;
+    padding: 10px;
+    transition: all 0.5s ease;
+    color: #3392eb;
+    font-size: 18px;
+  }
+  .checkout_form .input_item input[type="email"]{
+    width: 100%;
+    border: 0;
+    background: transparent;
+    text-align: center;
+    border-bottom: 2px solid #dddddd;
+    padding: 10px;
+    transition: all 0.5s ease;
+    color: #3392eb;
+    font-size: 18px;
+  }
+  .totalCheckout{
+    width: 100%;
+    border: 0;
+    background: transparent;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s ease;
+    color: #7a7a7a;
+    font-size: 18px;
+  }
+  .checkout_form .input_item{
+    margin-bottom: 10px;
+  }
+  
+  .input_grp{
+    margin-bottom: 10px;
+  }
+  
+  .input_grp,
+  .input_grp .input_item.expiry_field{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input_grp .input_item{
+    width: 45%;
+  }
+  
+  .input_grp .input_item.expiry_field input[type="text"]:focus input[type="email"]:focus{
+    width: 45%;
+  }
+  
+  .btnCheckout{
+    width: 150px;
+    background: #5ecc79;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .btnCheckout a{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+    color: #fff;
+  }
+  
+  .checkout_form .input_item input[type="text"]:focus input[type="email"]:focus{
+    border-bottom: 2px solid #f2483b;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #dddddd;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #dddddd;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #dddddd;
+  }
+.email{
+    border: none;
+    color: rgb(212, 212, 212);
+    font-size: 1.1rem;
+}
+.emailBody{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2.5px solid rgb(224, 224, 224);
+}
+.priceH2{
+    color: rgb(65, 63, 63);
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+}
+.contador{
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    height: 26px;
+    width: 25px;
+    border-radius: 50%;
+    
+}
+.cardCategoria{
+    box-shadow: 6px 6px 1.5px rgb(131, 164, 255);
+}
+.precioh2{
+    padding: 10px;
 }

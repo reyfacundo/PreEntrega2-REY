@@ -10,9 +10,6 @@ const Secciones = () => {
             <span className="visually-hidden">(current)</span>
         </li>
         <li className="nav-item navitem">
-            <Link className="nav-link" to={"/About"}>Nosotros</Link>
-        </li>
-        <li className="nav-item navitem">
         <Link className="nav-link" to={"/Contacto"}>Contacto</Link>
         </li>
         </>

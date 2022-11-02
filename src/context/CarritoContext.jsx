@@ -25,9 +25,11 @@ const CarritoProvider = (props) => {
         setCart(structuredClone(aux))
         console.log(cart)
     }
+    const total = cart.reduce((acc,prod) => acc + prod.stock * prod.precio, 0);
+    const count = cart.reduce((acc, item)=> acc + item.stock,0)
     return (
         <>
-            <CarritoContext.Provider value={{cart, agregarProducto, removerProducto}}>
+            <CarritoContext.Provider value={{cart, agregarProducto, removerProducto, total,count}}>
                 {props.children}
             </CarritoContext.Provider>
         </>

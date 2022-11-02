@@ -15,7 +15,7 @@ const DetalleProducto = ({producto}) => {
                     <div className="col-md-8">
                         <div className="card-body">
                         <h5 className="card-title detailTitle">{producto[1].nombre}</h5>
-                        <p className="card-text detailPrice"><b>${producto[1].precio}</b></p>
+                        <p className="card-text detailPrice"><h2 className='precioh2'>${producto[1].precio}</h2></p>
                         <p className="card-text">Stock disponible:{producto[1].stock}</p>
                         <div className="buyButton">
                         <ItemCount producto={producto}/>
