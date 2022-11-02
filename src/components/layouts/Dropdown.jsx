@@ -13,7 +13,7 @@ const Dropdown = ({categoria}) => {
     return (
         <>
             <li className="nav-item dropdown navitem">
-            <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+            <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
             <div className="dropdown-menu">
                 {dropdown}
             </div>

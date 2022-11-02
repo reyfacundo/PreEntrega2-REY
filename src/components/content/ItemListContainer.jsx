@@ -16,10 +16,10 @@ const ItemListContainer = () => {
                         <Link className='nav-link' to={"/producto/" + producto[0]}><img className="card-img-top" src={producto[1].img} alt={producto[1].nombre} /></Link>
                         <h5 className="card-title ">{producto[1].nombre}</h5>
                         <p className="card-text price"><b>${producto[1].precio}</b></p>
-                        <p className="card-text">Stock disponible: {producto[1].stock}</p>
+                        <p className="card-text">Stock: {producto[1].stock}</p>
                         </div>
                         <div className='btncard mt-auto'>
-                            <button className="btn-details btn btn-primary homeDetails"><Link className='nav-link' to={"/producto/" + producto[0]}>Ver Detalles</Link></button>
+                            <button className="btn-details btn btn-primary homeDetails"><Link className='nav-link' to={"/producto/" + producto[0]}>See more</Link></button>
                         </div>
                     </div>
                 </div>)

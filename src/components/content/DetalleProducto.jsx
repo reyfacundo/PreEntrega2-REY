@@ -16,7 +16,7 @@ const DetalleProducto = ({producto}) => {
                         <div className="card-body">
                         <h5 className="card-title detailTitle">{producto[1].nombre}</h5>
                         <p className="card-text detailPrice"><h2 className='precioh2'>${producto[1].precio}</h2></p>
-                        <p className="card-text">Stock disponible:{producto[1].stock}</p>
+                        <p className="card-text">Stock:{producto[1].stock}</p>
                         <div className="buyButton">
                         <ItemCount producto={producto}/>
                         </div>

@@ -15,9 +15,9 @@ const Categoria = () => {
                     <div className="card-body">
                         <h5 className="card-title">{stock.nombre}</h5>
                         <p className="card-text"><h2>${stock.precio} </h2></p>
-                        <p className="card-text">Stock disponible: {stock.cantidad}</p>
+                        <p className="card-text">Stock: {stock.cantidad}</p>
                         <div className='btncard'>
-                            <button className="btn-details btn btn-primary cardCategoria"><Link className='nav-link' to={"/producto/" + stock.id}>Ver Detalles</Link></button>
+                            <button className="btn-details btn btn-primary cardCategoria"><Link className='nav-link' to={"/producto/" + stock.id}>See more</Link></button>
                         </div>
                     </div>
                 </div>)
